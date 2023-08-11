@@ -19,4 +19,6 @@ module "example" {
   dockerhub_username = var.dockerhub_username
   dockerhub_password = var.dockerhub_password
 }
-
+output "docker_image_ids" {
+  value = module.example.docker_image_ids
+}
